@@ -47,10 +47,6 @@ body {
   font-size: 18px;
 }
 
-.cabecalho-menu-item: hover {
-  color: #495465;
-}
-
 .conteudo {
   margin-bottom: 48px;
 }
@@ -128,6 +124,7 @@ body {
   flex-direction: row;
   padding: 40px;
   justify-content: space-evenly;
+  border-bottom: 0.4px solid rgba(46, 39, 33, 0.8);
 }
 
 .conteudo-secundario-box {
@@ -172,4 +169,52 @@ body {
   padding-right: 50px;
 
   color: #1e1d1c;
+}
+
+.conteudo-rodape {
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo-rodape {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 89px;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-input {
+  font-family: "Sarala";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.input-rodape {
+  border: none;
+  backdrop-filter: blur(10px);
+}
+
+.conteudo-rodape-escrito-botao {
+  background-color: #788394;
+  width: 150px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.conteudo-rodape-escrito-botao:hover {
+  background-color: #495465;
 }
