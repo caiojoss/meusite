@@ -172,10 +172,11 @@ body {
 }
 
 .conteudo-rodape {
-  padding: 150px;
+  padding: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .titulo-rodape {
@@ -186,19 +187,32 @@ body {
   line-height: 89px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.texto-input {
+.input-rodape {
+  border: none;
+  background: transparent;
   font-family: "Sarala";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
+  width: 600px;
 }
 
-.input-rodape {
+.input-rodape-maior {
   border: none;
-  backdrop-filter: blur(10px);
+  background: transparent;
+  font-family: "Sarala";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  justify-content: flex-end;
+  width: 600px;
+  height: 150px;
 }
 
 .conteudo-rodape-escrito-botao {
