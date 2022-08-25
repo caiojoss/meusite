@@ -7,7 +7,7 @@
     <meta name="description" content="Portfólio online em desenvolvimento" />
     <title>Site Caio</title>
     <link rel="icon" href="imagens/logo-icon.png" />
-
+    <script src="./script/main.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
@@ -15,9 +15,24 @@
     <header class="cabecalho">
       <img class="cabecalho-imagem" src="imagens/logo.svg" alt="logo" />
       <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-item">Quem sou eu?</a>
-        <a class="cabecalho-menu-item">Projetos</a>
-        <a class="cabecalho-menu-item">Contato</a>
+        <a
+          href="#quem-sou-eu"
+          style="text-decoration: none"
+          class="cabecalho-menu-item"
+          >Quem sou eu?</a
+        >
+        <a
+          href="#projetos"
+          style="text-decoration: none"
+          class="cabecalho-menu-item"
+          >Projetos</a
+        >
+        <a
+          href="#contato"
+          style="text-decoration: none"
+          class="cabecalho-menu-item"
+          >Contato</a
+        >
       </nav>
 
       <div class="cabecalho-imagem2">
@@ -44,7 +59,7 @@
 
     <main class="conteudo">
       <section1 class="conteudo-principal">
-        <div class="conteudo-principal-escrito">
+        <div id="quem-sou-eu" class="conteudo-principal-escrito">
           <h1 class="conteudo-principal-escrito-titulo">QUEM SOU EU</h1>
           <h2 class="conteudo-principal-escrito-subtitulo">
             Meu nome é Caio, sou um dev junior, que está começando a trilhar sua
@@ -52,7 +67,9 @@
             curioso e sempre dou o meu melhor em tudo que estou fazendo =D.
           </h2>
 
-          <button class="conteudo-principal-escrito-botao">Projetos</button>
+          <button href="#projetos" class="conteudo-principal-escrito-botao">
+            Projetos
+          </button>
         </div>
         <img
           class="conteudo-principal-imagem"
@@ -62,7 +79,7 @@
       </section1>
 
       <section2 class="conteudo-secundario">
-        <div2 class="conteudo-secundario-box">
+        <div2 id="projetos" class="conteudo-secundario-box">
           <img
             class="conteudo-secundario-imagem"
             src="imagens/netflix icon.svg"
@@ -106,12 +123,34 @@
       </section2>
     </main>
 
-    <footer class="conteudo-rodape">
+    <footer id="contato" class="conteudo-rodape">
       <a class="titulo-rodape">vamos trabalhar juntos?</a>
-      <a class="texto-input">Nome</a>
-      <input class="input-rodape" type="text" name="Nome" id="Nome" />
-      <a class="texto-input">Email</a>
-      <input class="input-rodape" type="text" name="Email" id="Email" />
+      <input
+        type="text"
+        placeholder="Nome"
+        class="input-rodape"
+        type="text"
+        name="Nome"
+        id="Nome"
+      />
+
+      <input
+        type="text"
+        placeholder="Email"
+        class="input-rodape"
+        type="text"
+        name="Email"
+        id="Email"
+      />
+      <textarea
+        type="text"
+        placeholder="Projeto em mente"
+        class="input-rodape-maior"
+        type="text"
+        name="ideia"
+        id="ideia"
+      ></textarea>
+
       <button class="conteudo-rodape-escrito-botao">Enviar</button>
     </footer>
   </body>
